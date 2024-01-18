@@ -88,3 +88,13 @@ body {
     border-style: double;
     padding: 15px;
   }
+#printDiv2{
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
