@@ -10,8 +10,9 @@
   <div class="container">
     <h1>Salen Solutions👁️ </h1>
     <form id="appointmentForm">
+     
       <label for="name">Nome:</label>
-      <input type="text" id="name" required autocomplete="off">
+      <input type="name" id="name" required autocomplete="off">
 
       <label for="date">Data:</label>
       <input type="date" id="date" required>
@@ -27,13 +28,26 @@
         <select id="local" name="local"></select>
       </label>
 
+      <label for="Referência">Referência:
+        <select id="local" name="Referência"></select>
+      </label>
+
+
+      <label for="nomeOperador">nome operador</label>
+      <input type="text" id="nomeOperador" required autocomplete="off">
+
+      <label for="idOperador">id operador</label>
+      <input type="text" id="idOperador" required autocomplete="off">
+      
+
+
       <button type="button" onclick="generateVoucher()">Gerar Voucher</button>
-      <button type="button" onclick="captureAndSave()">👁️</button>
+      <button type="button" onclick="captureAndSave()">Gerar Imagem</button>
     </form>
     
-
+    
     <div id="voucherDisplay" class="hidden">
-      <h2 id="voucherMessage"></h2>
+      <ul></ul><h2 id="voucherMessage"></h2></ul>
     
     </div>
    <h4>Central Visão Brasil👁️</h4>
