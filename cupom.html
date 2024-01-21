@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Agendamento de Consulta</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Salen Solutions👁️ </h1>
-    <form id="appointmentForm">
-     
-      <label for="name">Nome:</label>
-      <input type="name" id="name" required autocomplete="off">
-
-      <label for="date">Data:</label>
-      <input type="date" id="date" required>
-
-      <label for="time">Hora:</label>
-      <input type="time" id="time" required>
-
-      <label for="otica">Otica: 
-        <select id="otica" name="otica"></select>
-      </label>
-
-      <label for="local">Local:
-        <select id="local" name="local"></select>
-      </label>
-
-      <label for="Referência">Referência:
-        <select id="local" name="Referência"></select>
-      </label>
-
-
-      <label for="nomeOperador">nome operador</label>
-      <input type="text" id="nomeOperador" required autocomplete="off">
-
-      <label for="idOperador">id operador</label>
-      <input type="text" id="idOperador" required autocomplete="off">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agendamento de Consulta</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Salen Solutions👁️ </h1>
+      <form id="appointmentForm">
       
+        <label for="name">Nome:</label>
+        <input type="name" id="name" required autocomplete="off">
 
+        <label for="date">Data:</label>
+        <input type="date" id="date" required>
 
-      <button type="button" onclick="generateVoucher()">Gerar Voucher</button>
-      <button type="button" onclick="captureAndSave()">Gerar Imagem</button>
-    </form>
-    
-    
-    <div id="voucherDisplay" class="hidden">
-      <ul></ul><h2 id="voucherMessage"></h2></ul>
-    
+        <label for="time">Hora:</label>
+        <input type="time" id="time" required>
+
+        <label for="otica">Otica: 
+          <select id="otica" name="otica"></select>
+        </label>
+
+        <label for="local">Local:
+          <select id="local" name="local"></select>
+        </label>
+
+        </select>
+        </label>
+
+        <label for="nomeOperador">nome operador</label>
+        <input type="nomeOperador" id="nomeOperador" required autocomplete="off">
+
+        <label for="idOperador">id operador</label>
+        <input type="idOperador" id="idOperador" required autocomplete="off">
+        
+        <button type="button"  onclick="generateVoucher();
+        captureAndSave()">Gerar Voucher</button>
+        
+      </form>
+      
+      <div id="voucherDisplay" >
+        <h2 id="voucherMessage" class="hidden-element"></h2>
+      </div>
+      <h4>Central Visão Brasil👁️</h4>
     </div>
-   <h4>Central Visão Brasil👁️</h4>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script src="https://cdn.rawgit.com/eKoopmans/html2pdf/v0.9.2/dist/html2pdf.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-
-</body>
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.rawgit.com/eKoopmans/html2pdf/v0.9.2/dist/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

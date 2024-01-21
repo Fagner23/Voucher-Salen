@@ -150,9 +150,7 @@ body {
   
   #voucherMessage {
     text-align: center;
-
     width: calc(105% - 20px);
-  
     color: #030303;
     font-size: 25px;
     font-weight: bold;
@@ -170,6 +168,13 @@ body {
     left: 20;
     
   }
+
+  .hidden-element{
+
+  display: none;
+
+}
+
 #printDiv2{
   background-color: #3498db;
   color: #fff;
@@ -179,4 +184,8 @@ body {
   cursor: pointer;
   font-size: 12px;
 
+}
+
+#voucherMessage ul{
+  list-style-type: none;
 }
