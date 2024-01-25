@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Agendamento de Consulta</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Salen Solutions👁️ </h1>
+    <div id="modalErroOverlay" class="hide-element"></div>
+    <aside id="modalErro" class="hide-element">
+      <span id="botaoFecharModal" onclick="fecharModalErro()">&times;</span>
+      <header>
+        <span>Um erro ocorreu!</span>
+      </header>
+      <section id="conteudoModalErro"></section>
+    </aside>
+    <section class="voucher-generation-container">
+      <fieldset>
+        <h4>Salen Solutions 👁️</h4>
+      </fieldset>
       <form id="appointmentForm">
-      
-        <label for="name">Nome:</label>
-        <input type="name" id="name" required autocomplete="off">
-
-        <label for="date">Data:</label>
-        <input type="date" id="date" required>
-
-        <label for="time">Hora:</label>
-        <input type="time" id="time" required>
-
-        <label for="otica">Otica: 
+        <div class="form-line">
+          <label for="name">Nome:</label>
+          <input type="name" id="name" required autocomplete="off" />
+        </div>
+        <div class="form-line">
+          <label for="date">Data:</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="form-line">
+          <label for="time">Hora:</label>
+          <input type="time" id="time" required />
+        </div>
+        <div class="form-line">
+          <label for="otica">Otica:</label>
           <select id="otica" name="otica"></select>
-        </label>
-
-        <label for="local">Local:
+        </div>
+        <div class="form-line">
+          <label for="local">Local:</label>
           <select id="local" name="local"></select>
-        </label>
-
-        </select>
-        </label>
-
-        <label for="nomeOperador">nome operador</label>
-        <input type="nomeOperador" id="nomeOperador" required autocomplete="off">
-
-        <label for="idOperador">id operador</label>
-        <input type="idOperador" id="idOperador" required autocomplete="off">
-        
-        <button type="button"  onclick="generateVoucher();
-        captureAndSave()">Gerar Voucher</button>
-        
+        </div>
+        <div class="form-line">
+          <label for="nomeOperador">nome operador</label>
+          <input
+            type="nomeOperador"
+            id="nomeOperador"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-line">
+          <label for="idOperador">id operador</label>
+          <input
+            type="idOperador"
+            id="idOperador"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="form-line generate-voucher">
+          <button type="button" onclick="generateVoucher();captureAndSave()">
+            Gerar Voucher
+          </button>
+        </div>
       </form>
-      
-      <div id="voucherDisplay" >
-        <h2 id="voucherMessage" class="hidden-element"></h2>
-      </div>
+      <section id="voucherMessage" class="hide-element"></section>
       <h4>Central Visão Brasil👁️</h4>
-    </div>
-
-    
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://unpkg.com/mustache@latest"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
