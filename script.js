@@ -886,11 +886,19 @@ const gerarErroNaoAbreSabados = ({ otica, local }) => {
 };
 
 const horarioEscolhidoDentroDeIntervalo = (
-  { inicio, fim },
+  horariosPermitidos,
   horarioParaTestar
 ) => {
-  const inicioPermitido = new Date("1970-01-01T" + inicio + ":00");
-  const finalPermitido = new Date("1970-01-01T" + fim + ":00");
+  if (horariosPermitidos == null) {
+    return false;
+  }
+
+  const inicioPermitido = new Date(
+    "1970-01-01T" + horariosPermitidos.inicio + ":00"
+  );
+  const finalPermitido = new Date(
+    "1970-01-01T" + horariosPermitidos.fim + ":00"
+  );
   const horarioEscolhido = new Date("1970-01-01T" + horarioParaTestar + ":00");
 
   return (
