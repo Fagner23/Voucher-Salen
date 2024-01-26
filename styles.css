@@ -90,24 +90,39 @@ button:hover {
 }
 
 #voucherMessage {
-    text-align: center;
-    width: calc(105% - 20px);
+    width: 80%;
     color: #030303;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
     background-image:linear-gradient(90deg,rgba(149, 248, 221, 0.642),rgb(124, 177, 251));
     border-radius: 12px;
     border-style: double;
     margin-top: 10px;
     padding: 20px;
-    position: -ms-page;
-    top: 0; 
-    left: 0;
     border-bottom: 10px solid rgb(3, 25, 74);
     border-left: 10px solid rgb(194, 242, 237);
-    width: 50;
-    margin-top: -10;
-    left: 20;
+}
+
+#voucherMessage header{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#voucherMessage footer{
+  font-size: 18px;
+}
+
+#voucherMessage footer span{
+  display: block;
+  margin-bottom: 10px;
+}
+
+#voucherMessage ul {
+  font-size: 20px;
+}
+
+#voucherMessage header, 
+#voucherMessage footer {
+  text-align: center;
 }
 
 #printDiv2 {
@@ -136,15 +151,31 @@ button:hover {
 }
 
 #modalErro {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  left: 50vw;
+  padding: 20px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50vh; 
   z-index: 2;
+  width: 35vw;
+  height: 30vh;
+}
+
+#modalErro:not(.hide-element){
+  display: flex;
+  flex-direction: column;
+}
+
+#modalErro header{
+  color: #45526f;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 #botaoFecharModal {
@@ -152,4 +183,8 @@ button:hover {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+#conteudoModalErro{
+  padding: 20px;
 }
