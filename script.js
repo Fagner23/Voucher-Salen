@@ -14,8 +14,8 @@ const TICKET_TEMPLATE = `
         </li>    
     </section>
     <footer>
-      <span>Obs: Caso o paciente tenha diabetes ou hipertensão, é necessário que esteja controlada. (ABAIXO DE 150) </span>
-      <span>📌 Chegando no local, diga que foi agendado com '{{nomeOperador}}' pelo WhatsApp e apresente o Código {{idOperador}} Assim você irá ganhar o exame de vista 100% gratuito!</span>
+  
+      <span>📌 Chegando no local, diga que foi agendado com '{{nomeOperador}}' pelo WhatsApp e apresente o Código {{idOperador}} Assim você irá ganhar o teste de visão 100% gratuito!</span>
     </footer>
   </section>`;
 
