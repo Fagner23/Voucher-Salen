@@ -399,7 +399,7 @@ const ENDERECOS_DOIS_IRMAOS = [
 const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: "Tucuruvi",
-    endereco: " Av,Tucuruvi, 689-Tucuruvi,São Paulo-SP,02305-001",
+    endereco: " Av Tucuruvi, 689-Tucuruvi,São Paulo-SP,02305-001",
     pontoReferencia: " Proximo ao Metrô Tucuruvi",
     horarioAlmoco: {
       inicio: "12:00",
