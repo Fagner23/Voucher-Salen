@@ -15,7 +15,7 @@ const TICKET_TEMPLATE = `
     </section>
     <footer>
   
-      <span>📌 Chegando no local, diga que foi agendado com '{{nomeOperador}}' pelo WhatsApp e apresente o Código {{idOperador}} Assim você irá ganhar o teste de visão 100% gratuito!</span>
+      <span>📌 Chegando no local, diga que foi agendado com '{{nomeOperador}}' pelo WhatsApp e apresente o Código {{idOperador}}, Assim você irá ganhar o teste de visão 100% gratuito!</span>
     </footer>
   </section>`;
 
@@ -193,7 +193,7 @@ const ENDERECOS_PERCI = [
   },
   {
     bairro: "Santana",
-    endereco: "Rua Alfredo Pujol,118",
+    endereco: "Rua Alfredo Pujol, 118",
     pontoReferencia: "Na Rua Do Mc Donald's do quartel á 200m do Metrô Santana",
     horarioAlmoco: {
       inicio: "13:00",
@@ -213,7 +213,7 @@ const ENDERECOS_PERCI = [
 const ENDERECOS_VENICE = [
   {
     bairro: "Mauá",
-    endereco: "R. Ver. Ângelo Gianone,41 C - Centro, Mauá - SP, 09390-070",
+    endereco: "R. Ver. Ângelo Gianone, 41 C - Centro, Mauá - SP, 09390-070",
     pontoReferencia: "próximo ao Banco do Brasil e a loja de roupas SBX",
     horarioAlmoco: {
       inicio: "13:00",
@@ -230,7 +230,7 @@ const ENDERECOS_VENICE = [
   },
   {
     bairro: "Cachoeirinha",
-    endereco: "Av. Parada Pinto 258",
+    endereco: "Av. Parada Pinto, 258 ",
     pontoReferencia: "Proximo da loja Marisa",
     horarioAlmoco: null,
     expedienteSemana: {
@@ -289,7 +289,7 @@ const ENDERECOS_RAZA_RJ = [
 const ENDERECOS_MIDAS = [
   {
     bairro: "Bangu",
-    endereco: "R Silva Cardoso 21c - Bangu - RJ - 21810-032",
+    endereco: "R Silva Cardoso 21c - Bangu - RJ , 21810-032 ",
     pontoReferencia: " Fica em frente ao ponto final do onibus 864",
     horarioAlmoco: {
       inicio: "12:00",
@@ -309,7 +309,7 @@ const ENDERECOS_MIDAS = [
 const ENDERECOS_STILE = [
   {
     bairro: "São Vicente",
-    endereco: "R. João Ramalho. 864 - Centro - 11310-050 - São Vicente",
+    endereco: "R. João Ramalho. 864 - Centro - 11310-050 , São Vicente",
     pontoReferencia: " 1°DP  de São Vicente/Skina Modas",
     horarioAlmoco: {
       inicio: "13:00",
@@ -328,7 +328,7 @@ const ENDERECOS_STILE = [
   {
     bairro: "Praia Grande",
     endereco:
-      "R. Oswaldo de Oliveira 192 - Boqueirão -11701-120 - Praia Grande",
+      "R. Oswaldo de Oliveira 192 - Boqueirão -11701-120 , Praia Grande",
     pontoReferencia: " Av São Paulo eTech Mundo Eletronicoss",
     horarioAlmoco: {
       inicio: "13:00",
@@ -346,7 +346,7 @@ const ENDERECOS_STILE = [
 
   {
     bairro: "Campinas",
-    endereco: "Av.Francisco Glicério,1103 - Centro Campinas",
+    endereco: "Av.Francisco Glicério, 1103 - Centro Campinas",
     pontoReferencia: " Ao lado do Magazine Luiza",
     horarioAlmoco: {
       inicio: "13:00",
@@ -399,7 +399,7 @@ const ENDERECOS_DOIS_IRMAOS = [
 const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: "Tucuruvi",
-    endereco: " Av,Tucuruvi,689-Tucuruvi,São Paulo-SP,02305-001",
+    endereco: " Av,Tucuruvi, 689-Tucuruvi,São Paulo-SP,02305-001",
     pontoReferencia: " Proximo ao Metrô Tucuruvi",
     horarioAlmoco: {
       inicio: "12:00",
@@ -417,7 +417,7 @@ const ENDERECOS_GOLDEN_MIX = [
 
   {
     bairro: "Americana",
-    endereco: "Praça Basilio Rangel,11-Centro,Americana-SP,13465-519",
+    endereco: "Praça Basilio Rangel, 11-Centro,Americana-SP,13465-519",
     pontoReferencia: " Em frente ao terminal rodoviário",
     horarioAlmoco: {
       inicio: "13:00",
@@ -435,7 +435,7 @@ const ENDERECOS_GOLDEN_MIX = [
 
   {
     bairro: "Indaiá Itaqua",
-    endereco: "R.Cap. José Leite,44 - Centro,Itaquaquecetuba-SP,08570-030",
+    endereco: "R.Cap. José Leite, 44 - Centro,Itaquaquecetuba-SP,08570-030",
     pontoReferencia: " Ao lado da loja Marabraz",
     horarioAlmoco: null,
     expedienteSemana: {
@@ -451,7 +451,7 @@ const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: " Menininha",
     endereco:
-      "  Estrada Do M'Boi Mirim,6059-Parque Do Lago,São Paulo - SP,04941-003",
+      "  Estrada Do M'Boi Mirim, 6059-Parque Do Lago,São Paulo - SP,04941-003",
     pontoReferencia: " Ao lado da loja Caedu",
     horarioAlmoco: {
       inicio: "13:00",
@@ -466,10 +466,27 @@ const ENDERECOS_GOLDEN_MIX = [
       fim: "16:00",
     },
   },
+  {
+    bairro: "Indaiá Itapevi",
+    endereco: " Av. Rubens Caramez, 55 - Centro,itapevi - SP- 06653-005 ",
+    pontoReferencia: " De Frente a Farmácia Drogasil",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+  },
 
   {
     bairro: "Francisco Morato",
-    endereco: " Rua Gerõnimo Caetano Garcia- 134",
+    endereco: " Rua Gerõnimo Caetano Garcia, 134 -SP, 07901-000",
     pontoReferencia: " De Frente Casas Bahia",
     horarioAlmoco: {
       inicio: "13:00",
@@ -487,7 +504,7 @@ const ENDERECOS_GOLDEN_MIX = [
 
   {
     bairro: "Salto",
-    endereco: "Rua Nove de Julho,180 -Centro,Salto -SP,133320-005",
+    endereco: "Rua Nove de Julho, 180 -Centro,Salto -SP,133320-005",
     pontoReferencia: "Ao lado das Pernambucanas",
     horarioAlmoco: null,
     expedienteSemana: {
@@ -503,7 +520,7 @@ const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: "Cocaia",
     endereco:
-      "Rua Rubens De Oliveira,412,- Parque Res.Cocaia,São Paulo- SP,04849-210",
+      "Rua Rubens De Oliveira, 412,- Parque Res.Cocaia,São Paulo- SP,04849-210",
     pontoReferencia: " Ao lado das Casas Bahia Do Residencial Cocaia",
     horarioAlmoco: {
       inicio: "13:00",
@@ -521,7 +538,7 @@ const ENDERECOS_GOLDEN_MIX = [
 
   {
     bairro: " Tatui",
-    endereco: " Rua Onze De Agosto,462- Centro,Tatuí-SP,18270-001",
+    endereco: " Rua Onze De Agosto, 462- Centro,Tatuí-SP,18270-001",
     pontoReferencia: " Ao lado da Sergio Calçado",
     horarioAlmoco: {
       inicio: "13:00",
@@ -540,7 +557,7 @@ const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: "Suzano",
     endereco:
-      "Rua General Francisco Glicério,394-Centro,Suzano-SP,08674-000,04849-210",
+      "Rua General Francisco Glicério, 394-Centro,Suzano-SP,08674-000,04849-210",
     pontoReferencia: "Proximo a Magazine Luiza e Casas Bahia",
     horarioAlmoco: null,
     expedienteSemana: {
@@ -552,7 +569,7 @@ const ENDERECOS_GOLDEN_MIX = [
   {
     bairro: " São José Do Rio Preto",
     endereco:
-      " Rua Bernardino De Campos,2828,Centro- São José Do Rio Preto - 015015300",
+      " Rua Bernardino De Campos, 2828,Centro- São José Do Rio Preto - 015015300",
     pontoReferencia: " Entre a loja Lívias e o Banco Itaú",
     horarioAlmoco: {
       inicio: "13:00",
@@ -590,7 +607,7 @@ const ENDERECOS_GOLDEN_MIX = [
 const ENCERECOS_GOLDEN_MIX_2 = [
   {
     bairro: "Votorantim ",
-    endereco: " Av.31 Março,686 - Centro de Votorantim  SP 18110-005",
+    endereco: " Av.31 Março, 686 - Centro de Votorantim  SP 18110-005",
     pontoReferencia: " Ao Lado Loja Montreal",
     horarioAlmoco: {
       inicio: "13:00",
@@ -608,7 +625,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: "Bauru",
-    endereco: "R.Batista De Carvalho,413- Quadra 4 centro Bauru Sp- 17010-0001",
+    endereco: "R.Batista De Carvalho, 413- Quadra 4 centro Bauru Sp- 17010-0001",
     pontoReferencia: " em frente a Drogasil do calçadão Batista de Carvalho",
     horarioAlmoco: null,
     expedienteSemana: {
@@ -624,7 +641,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
   {
     bairro: "Piracicaba",
     endereco:
-      "R.Gov . Pedro de Toledo,1231 - Centro Piracicaba - SP - 13400-07008570-030",
+      "R.Gov . Pedro de Toledo, 1231 - Centro Piracicaba - SP - 13400-07008570-030",
     pontoReferencia: "Ao lado da loja Cibellar na esquina",
     horarioAlmoco: {
       inicio: "13:00",
@@ -642,7 +659,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: " Taubate",
-    endereco: "  Praça Dom Epaminondas,47-Centro, Taubate-SP, 12010-020",
+    endereco: "  Praça Dom Epaminondas, 47-Centro, Taubate-SP, 12010-020",
     pontoReferencia: " Praça Empaminondas",
     horarioAlmoco: {
       inicio: "12:30",
@@ -661,7 +678,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
   {
     bairro: "Hortolandia",
     endereco:
-      " R. Luis Camilo de Camargo,498-Jardim Santana Hortolandia-SP,13184-420",
+      " R. Luis Camilo de Camargo, 498-Jardim Santana Hortolandia-SP,13184-420",
     pontoReferencia: " Próximo Banco Santander",
     horarioAlmoco: {
       inicio: "13:00",
@@ -698,7 +715,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: "Sorocaba",
-    endereco: "R.São Bento,39-Centro, Sorocaba-SP,18010-030",
+    endereco: "R.São Bento, 39-Centro, Sorocaba-SP,18010-030",
     pontoReferencia: "Próximo Banco Brasil",
     horarioAlmoco: {
       inicio: "13:00",
@@ -716,7 +733,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: " Itapetininga ",
-    endereco: " R.Dr Campos Salles,677-Centro,Itapetininga-SP-18200-005",
+    endereco: " R.Dr Campos Salles, 677-Centro,Itapetininga-SP-18200-005",
     pontoReferencia: "  Fica inicio da rua campos salles. Primeiro Quarterão",
     horarioAlmoco: {
       inicio: "12:00",
@@ -734,7 +751,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: "Pindamonhangaba",
-    endereco: "Dr Gustavo de Godoy,41-  Centro Pindamonhangaba-SP,12400-040",
+    endereco: "Dr Gustavo de Godoy, 41-  Centro Pindamonhangaba-SP,12400-040",
     pontoReferencia:
       "Mercado municipal de Pintamonhangaba e papelaria copiadora copyanet",
     horarioAlmoco: {
@@ -753,7 +770,7 @@ const ENCERECOS_GOLDEN_MIX_2 = [
 
   {
     bairro: " Jacarei",
-    endereco: " R.Dr. Lúcio Malta,353-Centro, Jacarei-SP-12237-000",
+    endereco: " R.Dr. Lúcio Malta, 353-Centro, Jacarei-SP-12237-000",
     pontoReferencia: " Mercadão Municipal",
     horarioAlmoco: {
       inicio: "13:00",
@@ -768,12 +785,30 @@ const ENCERECOS_GOLDEN_MIX_2 = [
       fim: "14:00",
     },
   },
+  {
+    bairro: " Ribeirão Preto",
+    endereco: " R.Americo Brasiliense, 557 - Centro Ribeirão",
+    pontoReferencia: " Ao Lado da sorveteria do JÔ muito antiga e tradicional da cidade",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
+
 ];
 
 const ENDERECOS_OPTICA_TRADICIONAL = [
   {
     bairro: "Lapa",
-    endereco: "Rua Barão De Jundiai,267 -Lapa",
+    endereco: "Rua Barão De Jundiai, 267 -Lapa",
     pontoReferencia: " Proximo a 12 de outubro vindo da estação de trem ",
     horarioAlmoco: {
       inicio: "12:00",
