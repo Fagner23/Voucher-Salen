@@ -429,7 +429,7 @@ const ENDERECOS_GOLDEN_MIX = [
     },
     expedienteFimDeSemana: {
       inicio: "09:00",
-      fim: "18:00",
+      fim: "14:00",
     },
   },
 
