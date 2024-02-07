@@ -363,7 +363,7 @@ const ENDERECOS_STILE = [
   },
 ];
 
-const ENDERECOS_DOIS_IRMAOS = [
+const ENDERECOS_2_IRMAOS = [
   {
     bairro: "Praça 8",
     endereco:
@@ -627,13 +627,16 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     bairro: "Bauru",
     endereco: "R.Batista De Carvalho, 413- Quadra 4 centro Bauru Sp- 17010-0001",
     pontoReferencia: " em frente a Drogasil do calçadão Batista de Carvalho",
-    horarioAlmoco: null,
+    horarioAlmoco:{
+     inicio: "13:00",
+    fim: "14:00",
+  },
     expedienteSemana: {
       inicio: "09:15",
       fim: "17:45",
     },
     expedienteFimDeSemana: {
-      inicio: "12:00",
+      inicio: "09:00",
       fim: "15:30",
     },
   },
@@ -803,6 +806,217 @@ const ENCERECOS_GOLDEN_MIX_2 = [
     },
   },
 
+  {
+    bairro: " Bragança Paulista",
+    endereco: "R. Coronel Teofilo Leme, 1379 - Centro de Bragança Paulista ",
+    pontoReferencia: " Próximo ao Banco Itaú",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:00",
+    },
+  },
+
+];
+
+
+const ENCERECOS_GOLDEN_MIX_3 = [
+  {
+    bairro: "José Paulino ",
+    endereco: " Rua José Paulino,1047 - Centro Campinas",
+    pontoReferencia: " Próximo à Catedral ",
+
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:00",
+    },
+  },
+
+  {
+    bairro: "Rubião",
+    endereco: "Rua Rubião Júnior,27 - Centro De São José Dos Campos ",
+    pontoReferencia: " Em frente ao shopping Centro",
+    horarioAlmoco: null,
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:20",
+    },
+  },
+
+  {
+    bairro: "Praia Grande",
+    endereco:
+      "Av. Presidente Costa E Silva, 613",
+    pontoReferencia: "Prédio Millas",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:20",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:40",
+    },
+  },
+
+  {
+    bairro: " Guarujá",
+    endereco: "  Av. Thiago Ferreira, 686 - Vila Alice Vicente de Carvalho",
+    pontoReferencia: " Em Frente a Torra-Torra",
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+
+  {
+    bairro: "Campos Sales",
+    endereco:
+      " Av.Campos Sales,700 - Centro Campinas",
+    pontoReferencia: " Ao lado da loja Marabraz",
+    horarioAlmoco: {
+      inicio: "12:30",
+      fim: "13:30",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:20",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:20",
+    },
+  },
+
+  {
+    bairro: "Cubatão ",
+    endereco:
+      "Av.9 de Abril, 2100 - Centro Cubatão",
+    pontoReferencia: "Ao lado da loja Doutor Sono",
+    horarioAlmoco: {
+      inicio: "12:30",
+      fim: "13:30",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:40",
+    },
+  },
+
+  {
+    bairro: "Limeira",
+    endereco: "R. Dr. Trajano de Barros Camargo, 802 - Centro",
+    pontoReferencia: "Perto das lojas Magazine",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
+
+  {
+    bairro: " Calçadão-SJC ",
+    endereco: " R. Sete de Setembro, 377 - Centro",
+    pontoReferencia: " Praça do Sapo",
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "15:30",
+    },
+  },
+
+  {
+    bairro: "Diadema",
+    endereco: "Av. Antônio Piranga, 35 - Centro",
+    pontoReferencia:
+      "Próximo ao Terminal de ônibus de Diadema ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:00",
+    },
+  },
+
+  {
+    bairro: " Carapicuíba",
+    endereco: " Av.Rui Barbosa,312 - Centro Carapicuíba",
+    pontoReferencia: " Em frente ao Banco Itaú do Calçadão Principal ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:20",
+      fim: "17:45",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:20",
+      fim: "14:20",
+    },
+  },
+  
+
+  {
+    bairro: " Franco Da Rocha",
+    endereco: "Rua Dona Amália Sejtini,125 - Centro ",
+    pontoReferencia: " Próximo ao Banco Itaú",
+   
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:20",
+    },
+    
+  },
+
 ];
 
 const ENDERECOS_OPTICA_TRADICIONAL = [
@@ -834,9 +1048,11 @@ const OTICAS_ENDERECOS = {
   Venice: ENDERECOS_VENICE,
   Midas: ENDERECOS_MIDAS,
   Stile: ENDERECOS_STILE,
-  DoisIrmaos: ENDERECOS_DOIS_IRMAOS,
+  DoisIrmaos: ENDERECOS_2_IRMAOS,
   GoldenMix: ENDERECOS_GOLDEN_MIX,
   GoldenMix2: ENCERECOS_GOLDEN_MIX_2,
+  GoldenMix3: ENCERECOS_GOLDEN_MIX_3 ,
+  
   OpticaTracional: ENDERECOS_OPTICA_TRADICIONAL,
 };
 
