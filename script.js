@@ -1002,6 +1002,24 @@ const ENCERECOS_GOLDEN_MIX_3 = [
       fim: "14:20",
     },
   },
+
+  {
+    bairro: " Grajau",
+    endereco: " Av. Dona Belmira Marin, 1060 - Parque Brasil",
+    pontoReferencia: " Em frente a Caixa Economica Federal ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:20",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:30",
+    },
+  },
   
 
   {
@@ -1015,6 +1033,24 @@ const ENCERECOS_GOLDEN_MIX_3 = [
       fim: "17:20",
     },
     
+  },
+
+  {
+    bairro: " Vila Galvão",
+    endereco: "Rua Treze de Maio,312 -Vila Galvão -Cep 07071-050",
+    pontoReferencia: "Vizinha de Parede da Hering, Casa Bahia, Magazine Luiza e Americanas ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:30",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:30",
+      fim: "17:30",
+    },
   },
 
 ];
@@ -1039,6 +1075,54 @@ const ENDERECOS_OPTICA_TRADICIONAL = [
   },
 ];
 
+const ENDERECOS_Indaia = [
+  {
+    bairro: "Indaiá Suzano",
+    endereco: "Rua General Francisco Glicério, 394 - Centro, Suzano - SP, 08674-000 ",
+    pontoReferencia: " Próximo à Magazine Luiza e a Casas Bahia",
+  
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "16:00",
+    },
+  
+  },
+
+  {
+    bairro: "Indaiá Itaqua",
+    endereco: "R. Cap. José Leite, 44 - Centro, Itaquaquecetuba - SP, 08570-030",
+    pontoReferencia: " Ao lado da loja Marabraz",
+  
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  
+  },
+
+  {
+    bairro: "Indaiá Itapevi",
+    endereco: "Av. Rubens Caramez, 55 - Centro, Itapevi - SP - 06653-005",
+    pontoReferencia: " Em frente à Farmácia Drogasil ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+  },
+];
+
 const OTICAS_ENDERECOS = {
   Benetti: ENDERECOS_BENETTI,
   Lelli: ENDERECOS_LELLI,
@@ -1052,8 +1136,8 @@ const OTICAS_ENDERECOS = {
   GoldenMix: ENDERECOS_GOLDEN_MIX,
   GoldenMix2: ENCERECOS_GOLDEN_MIX_2,
   GoldenMix3: ENCERECOS_GOLDEN_MIX_3 ,
-  
   OpticaTracional: ENDERECOS_OPTICA_TRADICIONAL,
+  Indaiá: ENDERECOS_Indaia,
 };
 
 // FUNCOES AUXILIARES
