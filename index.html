@@ -25,6 +25,10 @@
           <input type="name" id="name" required autocomplete="off" />
         </div>
         <div class="form-line">
+          <label for="contato">Contato </label>
+          <input type="tel" id="contato" required autocomplete="off" oninput="formatarTelefone(this)" />
+        </div>
+        <div class="form-line">
           <label for="date">Data:</label>
           <input type="date" id="date" required />
         </div>
@@ -58,6 +62,7 @@
             autocomplete="off"
           />
         </div>
+       
         <div class="form-line generate-voucher">
           <button type="button" onclick="generateVoucher();captureAndSave()">
             Gerar Voucher

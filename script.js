@@ -1054,6 +1054,208 @@ const ENCERECOS_GOLDEN_MIX_3 = [
   },
 
 ];
+/** */
+
+const ENCERECOS_GOLDEN_MIX_4 = [
+  {
+    bairro: "Cidade Dutra ",
+    endereco: " Avenida Senador Teotônio Vilela, 1102 - Cidade Dutra",
+    pontoReferencia: " Em frente a Faisal ",
+    horarioAlmoco:{
+      inicio: "13:00",
+      fim: "14:00"
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:30",
+    },
+  },
+
+  {
+    bairro: "Freguesia Do Ó",
+    endereco: "Av Itaberaba, 2069 - Freguesia Do Ó",
+    pontoReferencia: " Em frente a Igreja Santa Cruz",
+    horarioAlmoco: {
+      inicio:"13:00",
+      fim:"14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "14:00",
+    },
+  },
+
+  {
+    bairro: "Itapevi",
+    endereco:
+      "Av Rubens Caramez, 32 Cohab Itapevi",
+    pontoReferencia: "Proximo Da Farmacia Drogasil",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+
+  {
+    bairro: " Suzano",
+    endereco: "  Rua General Francisco Glicério, 405",
+    pontoReferencia: " Próximo a Casas Bahia Em Frente A Loja De Sapato Humanitárian",
+    
+    horarioAlmoco:{
+    inicio:"14:00",
+    fim:"15:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+
+  {
+    bairro: "Frei Gaspar",
+    endereco:
+      " Rua Frei Gaspar, 726 - Centro",
+    pontoReferencia: " Próximo ao Shopping Deslumbrande e próximo ao Hospital São José",
+    
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+
+  {
+    bairro: "Piraporinha ",
+    endereco:
+      "Estrada do M'Boi Mirim, 885 - Jardim das Flores",
+    pontoReferencia: "Em frente a Magazine Luiza ",
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "13:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+  },
+
+  {
+    bairro: "Itaquaquecetuba",
+    endereco: "Praça Dos Expedicionários, 44 - Centro",
+    pontoReferencia: "Em Frente Ao Itaú,próximo ao Torra Torra",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+  },
+
+  {
+    bairro: " São Vicente ",
+    endereco: " Praça Barão do Rio Branco, 57",
+    pontoReferencia: " Proximo as Casas Bahia ",
+   
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:50",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:50",
+    },
+  },
+
+  {
+    bairro: "Parelheiros",
+    endereco: "Estrada da Colônia, 232 - Jd Novo Parelheiros - 0489-2000",
+    pontoReferencia:
+      "Proximo as Casas Bahia ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:30",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:30",
+    },
+  },
+
+  {
+    bairro: " Álvares Machado",
+    endereco: " Av.Rui Barbosa,312 - Centro Carapicuíba",
+    pontoReferencia: " Próximo a Magazine Damanos   ",
+   
+    expedienteSemana: {
+      inicio: "08:30",
+      fim: "19:40",
+    },
+    expedienteFimDeSemana: {
+      inicio: "08:30",
+      fim: "15:30",
+    },
+  },
+
+  {
+    bairro: " Jd. Angela",
+    endereco: " Estrada do M.Boi Mirim, 4005- 04935-053",
+    pontoReferencia: " Ao Lado das Casas Bahia / base policial  ",
+    horarioAlmoco: {
+      inicio: "13:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "18:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "16:15",
+    },
+  },
+  
+
+ 
+
+];
+
 
 const ENDERECOS_OPTICA_TRADICIONAL = [
   {
@@ -1135,7 +1337,8 @@ const OTICAS_ENDERECOS = {
   DoisIrmaos: ENDERECOS_2_IRMAOS,
   GoldenMix: ENDERECOS_GOLDEN_MIX,
   GoldenMix2: ENCERECOS_GOLDEN_MIX_2,
-  GoldenMix3: ENCERECOS_GOLDEN_MIX_3 ,
+  GoldenMix3: ENCERECOS_GOLDEN_MIX_3,
+  GoldenMix4: ENCERECOS_GOLDEN_MIX_4,
   OpticaTracional: ENDERECOS_OPTICA_TRADICIONAL,
   Indaiá: ENDERECOS_Indaia,
 };
@@ -1329,8 +1532,11 @@ function captureAndSave() {
 }
 
 function generateVoucher() {
+  const formData = getFormData();
+  sendFormData(formData);
   const formFields = {
     name: document.getElementById("name").value,
+    contato: document.getElementById("contato").value,
     local: document.getElementById("local").value,
     otica: document.getElementById("otica").value,
     date: document.getElementById("date").value,
@@ -1401,6 +1607,22 @@ function carregarEnderecosNoDropdown(oticaSelecionada) {
     document.getElementById("local").appendChild(option);
   });
 }
+// Funçao para adicionar o Telefone
+
+function formatarTelefone(input) {
+  // Remove qualquer caractere que não seja número
+  var numeroTelefone = input.value.replace(/\D/g, '');
+
+  // Formatação do número
+  if (numeroTelefone.length === 11) {
+      // (XX) XXXXX-XXXX
+      input.value = '(' + numeroTelefone.substring(0, 2) + ') ' + numeroTelefone.substring(2, 7) + '-' + numeroTelefone.substring(7);
+  } else if (numeroTelefone.length === 10) {
+      // (XX) XXXX-XXXX
+      input.value = '(' + numeroTelefone.substring(0, 2) + ') ' + numeroTelefone.substring(2, 6) + '-' + numeroTelefone.substring(6);
+  }
+  
+}
 
 // FUNCOES MODAL DE ERRO
 
@@ -1430,3 +1652,48 @@ document.getElementById("otica").addEventListener("change", function (event) {
   deletarFilhosDoElemento("local");
   carregarEnderecosNoDropdown(event.target.value);
 });
+// enviar para o formulario
+
+function getFormData() {
+  const name = document.getElementById('name').value;
+  const contato = document.getElementById('contato').value;
+
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+  const otica = document.getElementById('otica').value;
+  const local = document.getElementById('local').value;
+  const nomeOperador = document.getElementById('nomeOperador').value;
+  const idOperador = document.getElementById('idOperador').value;
+
+  return {
+      name,
+      contato,
+      date,
+      time,
+      otica,
+      local,
+      nomeOperador,
+      idOperador
+  };
+}
+// Adicione esta função para enviar os dados para o formulário SheetMonkey
+function sendFormData(formData) {
+  
+  fetch('https://api.sheetmonkey.io/form/whmGk6LnN7SVPTsKjJBZPm', {
+      method: 'POST',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+      // Manipule a resposta aqui, se necessário
+      console.log('Resposta do servidor:', data);
+  })
+  .catch(error => {
+      // Manipule erros aqui, se necessário
+      console.error('Erro ao enviar dados:', error);
+  });
+}
