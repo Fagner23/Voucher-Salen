@@ -1624,6 +1624,16 @@ function formatarTelefone(input) {
   
 }
 
+function formataData() {
+  let data = new Date();
+  const dia = data.getDate();
+  const mes = data.getMonth() + 1; // Os meses em JavaScript são baseados em zero (janeiro = 0)
+  const ano = data.getFullYear();
+
+  const dataFormatada = `${dia}/${mes}/${ano}`;
+  console.log(dataFormatada);
+}
+
 // FUNCOES MODAL DE ERRO
 
 function fecharModalErro() {
@@ -1679,7 +1689,7 @@ function getFormData() {
 // Adicione esta função para enviar os dados para o formulário SheetMonkey
 function sendFormData(formData) {
   
-  fetch('https://api.sheetmonkey.io/form/whmGk6LnN7SVPTsKjJBZPm', {
+  fetch('https://api.sheetmonkey.io/form/ijFqsJ9JKNVeuKrfVMCaGS', {
       method: 'POST',
       headers: {
           'Accept': 'application/json',
