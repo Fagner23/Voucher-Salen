@@ -1667,7 +1667,6 @@ document.getElementById("otica").addEventListener("change", function (event) {
 function getFormData() {
   const name = document.getElementById('name').value;
   const contato = document.getElementById('contato').value;
-
   const date = document.getElementById('date').value;
   const time = document.getElementById('time').value;
   const otica = document.getElementById('otica').value;
@@ -1689,21 +1688,39 @@ function getFormData() {
 // Adicione esta função para enviar os dados para o formulário SheetMonkey
 function sendFormData(formData) {
   
-  fetch('https://api.sheetmonkey.io/form/ijFqsJ9JKNVeuKrfVMCaGS', {
-      method: 'POST',
-      headers: {
+  function sendFormData(formData) {
+    // Verifique se todos os campos estão preenchidos
+    if (
+      formData.name &&
+      formData.contato &&
+      formData.date &&
+      formData.time &&
+      formData.otica &&
+      formData.local &&
+      formData.nomeOperador &&
+      formData.idOperador
+    ) {
+      // Todos os campos estão preenchidos, então envie os dados para a API
+      fetch('https://api.sheetmonkey.io/form/ijFqsJ9JKNVeuKrfVMCaGS', {
+        method: 'POST',
+        headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-  })
-  .then(response => response.json())
-  .then(data => {
-      // Manipule a resposta aqui, se necessário
-      console.log('Resposta do servidor:', data);
-  })
-  .catch(error => {
-      // Manipule erros aqui, se necessário
-      console.error('Erro ao enviar dados:', error);
-  });
+        },
+        body: JSON.stringify(formData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Manipule a resposta aqui, se necessário
+          console.log('Resposta do servidor:', data);
+        })
+        .catch(error => {
+          // Manipule erros aqui, se necessário
+          console.error('Erro ao enviar dados:', error);
+        });
+    } else {
+      // Alguns campos estão vazios, exiba uma mensagem de erro
+      console.error('Erro: Preencha todos os campos antes de enviar os dados.');
+    }
+  }
 }
