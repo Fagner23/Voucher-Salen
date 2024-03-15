@@ -263,6 +263,24 @@ const ENCERECOS_ZAFF = [
       fim: "14:00",
     },
   },
+  {
+    bairro: "Cabo Frio",
+    endereco: "R. Érico Coelho, 140 Centro, Cabo Frio - RJ",
+    pontoReferencia: "No calçadão, ao  da loja ED+",
+    horarioAlmoco: {
+      inicio: "12:00",
+      fim: "14:00",
+    },
+    expedienteSemana: {
+      inicio: "09:00",
+      fim: "17:00",
+    },
+    expedienteFimDeSemana: {
+      inicio: "09:00",
+      fim: "12:00",
+    },
+  },
+
 ];
 
 const ENDERECOS_RAZA_RJ = [
@@ -1221,7 +1239,7 @@ const ENCERECOS_GOLDEN_MIX_4 = [
 
   {
     bairro: " Álvares Machado",
-    endereco: " Av.Rui Barbosa,312 - Centro Carapicuíba",
+    endereco: " Av .Álvares Machado - Centro de Campinas, 943 - 13013-071 ",
     pontoReferencia: " Próximo a Magazine Damanos   ",
    
     expedienteSemana: {
