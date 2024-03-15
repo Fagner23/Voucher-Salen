@@ -1,3 +1,4 @@
+
 const TICKET_TEMPLATE = `
 <section>
     <header> Sua visita está AGENDADA, {{name}}!</header>
@@ -1673,6 +1674,8 @@ function getFormData() {
   const local = document.getElementById('local').value;
   const nomeOperador = document.getElementById('nomeOperador').value;
   const idOperador = document.getElementById('idOperador').value;
+  const Patologia = document.getElementById('Patologia').value;
+  const Atendimento = document.getElementById('Atendimento').value;
 
   return {
       name,
@@ -1682,11 +1685,15 @@ function getFormData() {
       otica,
       local,
       nomeOperador,
-      idOperador
+      idOperador,
+      Patologia,
+      Atendimento
+      
+      
   };
 }
 // Adicione esta função para enviar os dados para o formulário SheetMonkey
-function sendFormData(formData) {
+
   
   function sendFormData(formData) {
     // Verifique se todos os campos estão preenchidos
@@ -1698,11 +1705,12 @@ function sendFormData(formData) {
       formData.otica &&
       formData.local &&
       formData.nomeOperador &&
-      formData.idOperador
+      formData.idOperador &&
+      formData.Patologia
     ) {
       // Todos os campos estão preenchidos, então envie os dados para a API
-      fetch('https://api.sheetmonkey.io/form/ijFqsJ9JKNVeuKrfVMCaGS', {
-        method: 'POST',
+      fetch('https://api.sheetmonkey.io/form/xt1iwtz6d1yhEftctzVoPU', {
+        method: 'post',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -1723,4 +1731,4 @@ function sendFormData(formData) {
       console.error('Erro: Preencha todos os campos antes de enviar os dados.');
     }
   }
-}
+
