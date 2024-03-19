@@ -1686,7 +1686,7 @@ document.getElementById("otica").addEventListener("change", function (event) {
 function getFormData() {
   const name = document.getElementById('name').value;
   const contato = document.getElementById('contato').value;
-  const dateInput = document.getElementById('date').value; // Obter valor do campo de data
+  const date = document.getElementById('date').value;
   const time = document.getElementById('time').value;
   const otica = document.getElementById('otica').value;
   const local = document.getElementById('local').value;
@@ -1695,24 +1695,21 @@ function getFormData() {
   const Patologia = document.getElementById('Patologia').value;
   const Atendimento = document.getElementById('Atendimento').value;
 
-  // Converter a data para o formato desejado
-  const date = new Date(dateInput);
-  const formattedDate = date.toLocaleDateString('pt-BR'); // Converter para o formato 'dd/mm/yyyy'
-
   return {
-    name,
-    contato,
-    date: formattedDate, // Usar a data formatada
-    time,
-    otica,
-    local,
-    nomeOperador,
-    idOperador,
-    Patologia,
-    Atendimento
+      name,
+      contato,
+      date,
+      time,
+      otica,
+      local,
+      nomeOperador,
+      idOperador,
+      Patologia,
+      Atendimento
+      
+      
   };
 }
-
 // Adicione esta função para enviar os dados para o formulário SheetMonkey
 
   
@@ -1752,4 +1749,3 @@ function getFormData() {
       console.error('Erro: Preencha todos os campos antes de enviar os dados.');
     }
   }
-
